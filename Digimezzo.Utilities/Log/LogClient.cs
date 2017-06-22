@@ -70,7 +70,7 @@ namespace Digimezzo.Utilities.Log
             {
                 if (args != null) message = string.Format(message, args);
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 lock (logEntriesLock)
                 {
@@ -99,7 +99,7 @@ namespace Digimezzo.Utilities.Log
 
                 callsite = className + "." + methodName;
             }
-            catch (Exception)
+            catch (System.Exception)
             {
                 // Swallow
             }
@@ -145,7 +145,7 @@ namespace Digimezzo.Utilities.Log
                         }
                         isWriteSuccess = true;
                     }
-                    catch (Exception)
+                    catch (System.Exception)
                     {
                     }
                 }
@@ -155,7 +155,7 @@ namespace Digimezzo.Utilities.Log
                 {
                     this.RotateLogfile();
                 }
-                catch (Exception)
+                catch (System.Exception)
                 {
                 }
 
@@ -164,11 +164,11 @@ namespace Digimezzo.Utilities.Log
                 {
                     this.DeleteArchives();
                 }
-                catch (Exception)
+                catch (System.Exception)
                 {
                 }
             }
-            catch (Exception)
+            catch (System.Exception)
             {
             }
         }
@@ -213,7 +213,7 @@ namespace Digimezzo.Utilities.Log
             return LogClient.Instance.logfile;
         }
 
-        public static string GetAllExceptions(Exception ex)
+        public static string GetAllExceptions(System.Exception ex)
         {
             var sb = new StringBuilder();
 

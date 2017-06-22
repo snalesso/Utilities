@@ -58,7 +58,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Expection\IOExpection.cs" />
+    <Compile Include="Exception\IOException.cs" />
     <Compile Include="Helpers\NameValue.cs" />
     <Compile Include="Helpers\OperationResult.cs" />
     <Compile Include="ColorSpace\HSLColor.cs" />

@@ -36,7 +36,7 @@ namespace Digimezzo.Utilities.Utils
 
                 byteArray = (byte[])converter.ConvertTo(bmp, typeof(byte[]));
             }
-            catch (Exception)
+            catch (System.Exception)
             {
                 throw;
             }
@@ -94,7 +94,7 @@ namespace Digimezzo.Utilities.Utils
 
                 byteArray = (byte[])converter.ConvertTo(bmp, typeof(byte[]));
             }
-            catch (Exception)
+            catch (System.Exception)
             {
                 throw;
             }
@@ -158,7 +158,7 @@ namespace Digimezzo.Utilities.Utils
                 }
 
             }
-            catch (Exception)
+            catch (System.Exception)
             {
             }
 

@@ -72,7 +72,7 @@ namespace Digimezzo.Utilities.Settings
                 // Load Settings.xml in memory
                 this.settingsDoc = XDocument.Load(this.settingsFile);
             }
-            catch (Exception)
+            catch (System.Exception)
             {
                 // After a crash, the Settings file is sometimes empty.  If that
                 // happens, copy the BaseSettings file (there is no way to restore
@@ -162,7 +162,7 @@ namespace Digimezzo.Utilities.Settings
             {
                 previousVersion = this.GetValue<int>("Configuration", "Version");
             }
-            catch (Exception)
+            catch (System.Exception)
             {
             }
 
@@ -208,7 +208,7 @@ namespace Digimezzo.Utilities.Settings
                         Set<string>(item.Namespace, item.Setting, item.Value);
                     }
                 }
-                catch (Exception)
+                catch (System.Exception)
                 {
                     // If we fail, we do nothing.
                 }

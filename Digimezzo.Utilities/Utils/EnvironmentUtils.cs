@@ -23,7 +23,7 @@ namespace Digimezzo.Utilities.Utils
 
                 name = nameObject != null ? nameObject.ToString() : "Unknown";
             }
-            catch (Exception)
+            catch (System.Exception)
             {
                 name = "Unknown";
             }

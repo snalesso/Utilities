@@ -65,7 +65,7 @@ namespace Digimezzo.Utilities.Utils
                     win.WindowStartupLocation = WindowStartupLocation.CenterScreen;
                 }
             }
-            catch (Exception)
+            catch (System.Exception)
             {
                 // The try catch should not be necessary. But added just in case.
                 win.WindowStartupLocation = WindowStartupLocation.CenterScreen;

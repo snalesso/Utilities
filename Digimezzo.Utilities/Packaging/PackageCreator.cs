@@ -206,14 +206,14 @@ namespace Digimezzo.Utilities.Packaging
                             File.Copy(this.installablePackageName, Path.Combine(this.packageDirectory, this.installablePackageName), true);
                             copySuccess = true;
                         }
-                        catch (Exception)
+                        catch (System.Exception)
                         {
                             copySuccess = false;
                         }
                         Task.Delay(1000);
                     }
                 }
-                catch (Exception)
+                catch (System.Exception)
                 {
                     success = false;
                 }
@@ -277,7 +277,7 @@ namespace Digimezzo.Utilities.Packaging
                             File.Copy(this.updatePackageName, Path.Combine(this.packageDirectory, this.updatePackageName), true);
                             copySuccess = true;
                         }
-                        catch (Exception ex)
+                        catch (System.Exception)
                         {
                             copySuccess = false;
                         }
@@ -285,7 +285,7 @@ namespace Digimezzo.Utilities.Packaging
                         Task.Delay(1000);
                     }
                 }
-                catch (Exception ex)
+                catch (System.Exception)
                 {
                     success = false;
                 }
@@ -358,7 +358,7 @@ namespace Digimezzo.Utilities.Packaging
 
                     File.Copy(this.portablePackageName, Path.Combine(this.packageDirectory, this.portablePackageName), true);
                 }
-                catch (Exception)
+                catch (System.Exception)
                 {
                     success = false;
                 }
